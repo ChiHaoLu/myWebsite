@@ -1,8 +1,8 @@
 {
-  "title": "Resume",
-  "name": "startbootstrap-resume",
-  "version": "4.0.0-beta.2",
-  "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
+  "title": "ChiHaoLu",
+  "name": "chihaolu-resume",
+  "version": "1.0.0",
+  "description": "ChiHaoLu is Here!",
   "keywords": [
     "css",
     "sass",
@@ -11,19 +11,11 @@
     "theme",
     "template"
   ],
-  "homepage": "https://startbootstrap.com/template-overviews/resume",
-  "bugs": {
-    "url": "https://github.com/BlackrockDigital/startbootstrap-resume/issues",
-    "email": "feedback@startbootstrap.com"
-  },
+  "homepage": "https://chihaolu.me",
   "license": "MIT",
-  "author": "Start Bootstrap",
-  "contributors": [
-    "David Miller (http://davidmiller.io/)"
-  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-resume.git"
+    "url": "https://github.com/ChiHaoLu/myWebsite"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
