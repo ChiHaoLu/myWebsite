@@ -1,0 +1,102 @@
+.bar {
+  display: none;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule-2);
+  padding: 12px 20px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.brand {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  color: var(--ink);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menuBtn {
+  background: transparent;
+  border: 1px solid var(--rule);
+  color: var(--ink-2);
+  font: inherit;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  cursor: pointer;
+  min-width: 70px;
+}
+
+.menuBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.drawer {
+  display: none;
+  position: fixed;
+  top: 49px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--paper);
+  z-index: 40;
+  padding: 24px 20px 40px;
+  overflow-y: auto;
+}
+
+.drawerNav {
+  display: flex;
+  flex-direction: column;
+}
+
+.drawerItem {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 8px;
+  padding: 14px 0;
+  font-size: 16px;
+  color: var(--ink);
+  border-bottom: 1px solid var(--rule-2);
+}
+
+.drawerItem:active {
+  color: var(--accent);
+}
+
+.drawerSocials {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.drawerSocial {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  color: var(--ink-2);
+}
+
+.socialLabel {
+  color: var(--ink-3);
+}
+
+@media (max-width: 1023px) {
+  .bar {
+    display: flex;
+  }
+  .drawer {
+    display: block;
+  }
+}
