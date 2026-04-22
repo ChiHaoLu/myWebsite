@@ -185,6 +185,17 @@
   gap: 16px;
 }
 
+.projectTitle {
+  color: var(--ink);
+}
+
+.projectBody {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
 .projectDesc {
   color: var(--ink-3);
   font-size: 12px;
@@ -193,13 +204,45 @@
 @media (max-width: 600px) {
   .projectRow {
     grid-template-columns: 1fr;
-    gap: 4px;
+    gap: 6px;
   }
 }
 
 /* Repo rows */
 .repoRow {
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .repoRow {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    align-items: start;
+  }
+}
+
+/* Tech stack chips (used by project + repo rows) */
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.stackChip {
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+  border: 1px solid var(--rule-2);
+  padding: 1px 6px;
+  border-radius: 2px;
+  white-space: nowrap;
+  line-height: 1.6;
+}
+
+.row:hover .stackChip {
+  border-color: var(--rule);
 }
 
 /* Award rows */

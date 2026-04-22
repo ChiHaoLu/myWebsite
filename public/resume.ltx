@@ -1,0 +1,242 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape CHI-HAO (Alfred) LU} \\ \vspace{1pt}
+    Taipei City, Taiwan \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ (886+) 989289102 ~
+    \href{https://chihaolu.me}{\raisebox{-0.2\height}\faCube\  \underline{chihaolu.me}} ~ 
+    \href{mailto:qazwsxeric@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{qazwsxeric@gmail.com}} ~ 
+    \href{https://linkedin.com/in/chihaolu/}{\raisebox{-0.2\height}\faLinkedin\ \underline{chihaolu}}  ~
+    \href{https://github.com/chihaolu}{\raisebox{-0.2\height}\faGithub\ \underline{chihaolu}}  ~
+    \href{https://medium.com/@ChiHaoLu}{\raisebox{-0.2\height}\faMedium\ \underline{ChiHaoLu}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Taiwan University}{Sep. 2019 -- June 2023}
+      {Bachelor of Science in Economics}{Taipei City, Taiwan}
+    \resumeItemListStart
+        \resumeItem{ CSIE - Multimedia Security, Data Structures and Algorithms, Decentralized Applications Design }
+        \resumeItem{ EE - Cryptography, Machine Learning}
+        \resumeItem{ IM - Computer Networks and Applications, Operating System, Data Science}
+        \resumeItem{ ECON - Micro / Macro-economics, Statistics \& Probability, Econometrics, Game Theory}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {imToken Labs}{September 2022 -- Present}
+      {Blockchain Developer}{Taipei City, Taiwan}
+      \resumeItemListStart
+        \resumeItem{AA Wallet Contract (Solidity), SDK (Typescript), Extension (Typescript), Paymaster (Golang)}
+        \resumeItem{Blockchain DevOps for \& CI/CD \& Docker \& Chain Testing Infra (Geth, Anvil)}
+        \resumeItem{Cross Chain Bridge Relayer (Worker \& Scheduler w/ Typescript)}
+        \resumeItem{Research and develop on ZK-Rollups, especially on StarkNet(Cairo) \& zkSync.}
+        \resumeItem{Tokenlon: A DeFi Protocol with over a hundred million dollars in net revenue}
+        \resumeItem{CCIP Read: Secure offchain data retrieval}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {QF Taiwan (Ethereum Foundation Grantee)}{June 2022 -- August 2022}
+      {ZK Dapp Developer Intern.}{Taipei City, Taiwan}
+      \resumeItemListStart
+        \resumeItem{Developing \& Researching the Quadratic Funding Platform System.}
+        \resumeItem{Microeconomics \& Quadratic Funding / MACI, zk-Snarks / Solidity, Hardhat, Graph-Node, Docker}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Abundant Blockchain Program Teaching Experience}{January 2022 -- September 2022}
+      {Blockchain \& Smart Contract Instructor}{Taipei City, Taiwan}
+      \resumeItemListStart
+        \resumeItem{Appworks School Blockchain Program - Giving the lecture for 6 hrs}
+        \resumeItem{KryptoCamp - Giving the lecture for 44 hrs}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Information Management, National Taiwan University (NTUIM)}{September 2021 -- January 2022}
+      {Programming Teaching Assistant (TA)}{Taipei City, Taiwan}
+      \resumeItemListStart
+        \resumeItem{"Programming Design" in C++}
+        \resumeItem{"Programming for Business Computing" in Python  }
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+%-----------PROJECTS-----------
+\section{Publication / Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{\href{https://dappchef.com/}{\underline{DAPPCHEF}}} $|$ \emph{Solidity, Hardhat, Ganache, Typescript}}{January 2023}
+          \resumeItemListStart
+            \resumeItem{ An Ethereum Smart Contract Development Learning platform. }
+            \resumeItem{ Responsible for the Online Compiling \& Jusging System. }
+          \resumeItemListEnd 
+          \vspace{-12pt}
+          
+        \resumeProjectHeading
+          {\textbf{\href{https://www.books.com.tw/products/0010928889?loc=P_0005_002}{\underline{ALL IN ONE SOLIDITY}}} $|$ \emph{Solidity, Hardhat / Ganache, Geth}}{June 2022}
+          \resumeItemListStart
+            \resumeItem{ Published by Kryptocamp \& DrMaster Press in Eslite, Kingstone Book \& others Book Stores. }
+            \resumeItem{ Teaching how to construct a Smart Contract and Dapp with whole Solidity Basic Syntax. }
+          \resumeItemListEnd 
+          \vspace{-12pt}
+          
+        \resumeProjectHeading
+          {\textbf{Abundant Open Source Contribution} $|$ \emph{Dev Framework and Tools, Rollups' Core, Documentation}}{Always}
+          \resumeItemListStart
+            \resumeItem{ ERC-4337 Debugger, NethermindEth/starknet.go, Starknet-Provisions-Claim-Helper }
+            \resumeItem{ kakarot-foundry, hardhat-zksync, foundry-zksync, zkSync-contracts,  }
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+%-----------INVOLVEMENT---------------
+\section{Speech / Extracurricular/ Volunteer}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Abundant Tech. Speech Experience} $|$ \emph{Speaker}}{Oct 2022 -- Present}
+          \resumeItemListStart
+            \resumeItem{"Multi-Chain Account Abstraction" in ETHCC[7] - Onboarding, Wallets \& Abstraction Track}
+            \resumeItem{"Why ERC-4337 Isn't That Simple in Layer 2" in ETH Taipei 2025 - Wallet Track}
+            \resumeItem{"Introduction of StarkNet Account Abstraction" in ETH Taipei 2023 - ZK/Client/Infro Track}
+            \resumeItem{"The Underlying Architecture of Dapps" in NTU-CSIE}
+        \resumeItem{"Introduction of Circom \& SnarkJS" in Ethereum Foundation Grantee - ZK Playground}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+
+        \resumeProjectHeading
+          {\textbf{\href{https://ethtaipei.org/}{\underline{ETHTaipei}}} $|$ \emph{Free Labor}}{Mar 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Handling speakers application and agenda.}
+          \resumeItemListEnd 
+            
+    \resumeSubHeadingListEnd
+
+
+\end{document}

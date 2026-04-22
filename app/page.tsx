@@ -144,8 +144,19 @@ export default function HomePage() {
                     {...ext}
                     className={`row ln ${styles.projectRow}`}
                   >
-                    <span>{p.title}</span>
-                    <span className={styles.projectDesc}>{p.description}</span>
+                    <span className={styles.projectTitle}>{p.title}</span>
+                    <span className={styles.projectBody}>
+                      <span className={styles.projectDesc}>{p.description}</span>
+                      {p.stack.length > 0 && (
+                        <span className={styles.stack}>
+                          {p.stack.map((s) => (
+                            <span key={s} className={styles.stackChip}>
+                              {s}
+                            </span>
+                          ))}
+                        </span>
+                      )}
+                    </span>
                   </a>
                 </li>
               ))}
@@ -162,6 +173,15 @@ export default function HomePage() {
                     className={`row ln ${styles.repoRow}`}
                   >
                     <span>{c.repo}</span>
+                    {c.stack.length > 0 && (
+                      <span className={styles.stack}>
+                        {c.stack.map((s) => (
+                          <span key={s} className={styles.stackChip}>
+                            {s}
+                          </span>
+                        ))}
+                      </span>
+                    )}
                   </a>
                 </li>
               ))}

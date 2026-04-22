@@ -25,8 +25,13 @@ export type Talk = {
   kind: "Speech" | "Lecture";
   href: string;
 };
-export type Project = { title: string; description: string; href: string };
-export type Contribution = { repo: string; href: string };
+export type Project = {
+  title: string;
+  description: string;
+  stack: string[];
+  href: string;
+};
+export type Contribution = { repo: string; stack: string[]; href: string };
 export type Award = { title: string; venue: string; href: string };
 export type Publishment = {
   title: string;
@@ -65,7 +70,7 @@ export const SITE = {
       bullets: [
         "AA Wallet Contract (Solidity), SDK (Typescript), Extension (Typescript), Paymaster (Golang), gas metering & app benchmarking",
         "Blockchain DevOps for CI/CD, Docker and devnet testing infra (Geth, Anvil, Shell)",
-        "Layer 2 Interop integration: EIL, account-based resource lock",
+        "Layer 2 Interop integration: OIF w/ Hyperlane, EIL, account-based resource lock",
         "Claimable Link: transfer assets privately to anyone in one click",
         "Cross-chain bridge relayer (worker & scheduler in Typescript)",
         "Research on ZK-Rollups and Account Abstraction",
@@ -275,37 +280,73 @@ export const SITE = {
   openSource: {
     sideProjects: [
       {
+        title: "Musynk",
+        description:
+          "A platform for musicians to showcase work, post band recruitment, and find nearby collaborators on a map.",
+        stack: ["Go (Gin)", "Clean Architecture", "Next.js", "PostgreSQL", "Docker Compose"],
+        href: "https://musynk.com/",
+      },
+      {
+        title: "Goodrader",
+        description:
+          "Watchlist-driven stock tracker with AI-powered analysis and strategy, global market monitoring, and daily data crawlers.",
+        stack: ["Go (Gin)", "Clean Architecture", "Next.js", "PostgreSQL",  "Redis", "LLM","Flask","APScheduler", "Docker Compose"],
+        href: "https://github.com/ChiHaoLu/goodrader",
+      },
+      {
+        title: "Sinfonia Backend",
+        description:
+          "Backend for a precision dating app — questionnaires plus a custom matching algorithm score every pair.",
+        stack: ["Go (Gin)", "MongoDB", "Google OAuth", "Render", "Docker"],
+        href: "https://github.com/ChiHaoLu/sinfonia-backend",
+      },
+      {
         title: "Starkatana",
         description: "NFT collection on StarkNet, launched in 2023.",
+        stack: ["Cairo", "StarkNet"],
         href: "https://starkatana-nft.web.app/",
       },
       {
         title: "More on GitHub",
         description: "Other side experiments and prototypes.",
+        stack: [],
         href: "https://github.com/ChiHaoLu",
       },
     ] satisfies Project[],
     contributions: [
-      { repo: "ChiHaoLu/4337-debugger", href: "https://github.com/ChiHaoLu/4337-debugger" },
-      { repo: "ChiHaoLu/kakarot-foundry", href: "https://github.com/ChiHaoLu/kakarot-foundry" },
+      {
+        repo: "ChiHaoLu/4337-debugger",
+        stack: ["TypeScript", "ERC-4337"],
+        href: "https://github.com/ChiHaoLu/4337-debugger",
+      },
+      {
+        repo: "ChiHaoLu/kakarot-foundry",
+        stack: ["Solidity", "Foundry", "Kakarot zkEVM"],
+        href: "https://github.com/ChiHaoLu/kakarot-foundry",
+      },
       {
         repo: "NethermindEth/starknet.go",
+        stack: ["Go", "StarkNet RPC"],
         href: "https://github.com/NethermindEth/starknet.go",
       },
       {
         repo: "matter-labs/hardhat-zksync",
+        stack: ["TypeScript", "Hardhat", "zkSync"],
         href: "https://github.com/matter-labs/hardhat-zksync",
       },
       {
         repo: "matter-labs/foundry-zksync",
+        stack: ["Rust", "Foundry", "zkSync"],
         href: "https://github.com/matter-labs/foundry-zksync",
       },
       {
         repo: "ChiHaoLu/zkSync-contracts",
+        stack: ["Solidity", "zkSync"],
         href: "https://github.com/ChiHaoLu/zkSync-contracts",
       },
       {
         repo: "ChiHaoLu/Starknet-Provisions-Claim-Helper",
+        stack: ["JavaScript", "StarkNet"],
         href: "https://github.com/ChiHaoLu/Starknet-Provisions-Claim-Helper",
       },
     ] satisfies Contribution[],
