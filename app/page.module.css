@@ -227,19 +227,6 @@
   font-size: 11.5px;
 }
 
-/* Contact */
-.contactGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6px 28px;
-}
-
-@media (max-width: 600px) {
-  .contactGrid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Footer */
 .footer {
   margin-top: 96px;

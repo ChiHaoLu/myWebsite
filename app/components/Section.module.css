@@ -23,6 +23,7 @@
   letter-spacing: 0.3px;
   text-transform: uppercase;
   flex-shrink: 0;
+  color: var(--accent);
 }
 
 .rule {

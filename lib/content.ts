@@ -365,8 +365,7 @@ export type SectionId =
   | "writing"
   | "talks"
   | "open-source"
-  | "recognition"
-  | "contact";
+  | "recognition";
 
 export const SECTIONS: { id: SectionId; label: string }[] = [
   { id: "about", label: "About" },
@@ -376,5 +375,4 @@ export const SECTIONS: { id: SectionId; label: string }[] = [
   { id: "talks", label: "Talks" },
   { id: "open-source", label: "Open Source" },
   { id: "recognition", label: "Recognition" },
-  { id: "contact", label: "Contact" },
 ];

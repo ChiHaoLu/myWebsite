@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { SECTIONS, SITE, type SectionId } from "@/lib/content";
 import ThemeToggle from "./ThemeToggle";
@@ -33,8 +34,14 @@ export default function Sidebar() {
       <div className={styles.name}>{SITE.name}</div>
       <div className={styles.meta}>{SITE.role}</div>
       <div className={styles.meta}>{SITE.location}</div>
-      <div className={styles.avatar} aria-hidden>
-        🍩
+      <div className={styles.avatar}>
+        <Image
+          src="/profile.jpg"
+          alt={`${SITE.name} portrait`}
+          width={88}
+          height={88}
+          priority
+        />
       </div>
 
       <nav className={styles.nav}>

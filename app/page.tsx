@@ -222,21 +222,6 @@ export default function HomePage() {
             </ul>
           </Section>
 
-          {/* Contact */}
-          <Section id="contact" index={8} title="Contact">
-            <div className={styles.contactGrid}>
-              {SITE.socials.map((s) => (
-                <div key={s.label} className="leader" style={{ fontSize: 13 }}>
-                  <span style={{ color: "var(--ink-3)" }}>{s.label}</span>
-                  <span className="dots" />
-                  <a href={s.href} {...ext} className="ln ln--u">
-                    {s.handle}
-                  </a>
-                </div>
-              ))}
-            </div>
-          </Section>
-
           <footer className={styles.footer}>
             <span>© {new Date().getFullYear()} {SITE.name}</span>
             <span>Last update: {SITE.lastUpdated}</span>

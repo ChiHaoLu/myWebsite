@@ -10,7 +10,7 @@ Built with **Next.js 15 (App Router) + TypeScript**. Single-page Ledger layout: 
 - CSS Modules + design tokens in `app/globals.css`
 - `next/font/google` for JetBrains Mono (no external CSS)
 - No CSS framework, no theme library — kept intentionally minimal
-- Deployed on Vercel via GitHub Actions
+- Deployed on Vercel (native GitHub integration — no GitHub Actions, no secrets)
 
 ## Project layout
 
@@ -24,8 +24,6 @@ app/
 lib/
   content.ts           All site content (typed) — edit here to update
 public/                profile.jpg, favicon.ico, chihao-lu-resume.pdf
-.github/workflows/
-  deploy.yml           CI: build + deploy to Vercel on push to master
 ```
 
 ## Local development
@@ -49,31 +47,19 @@ To add a new section:
 
 ## Deployment
 
-Pushing to `master` triggers `.github/workflows/deploy.yml`, which builds and deploys to Vercel as production. PRs deploy as preview.
+Vercel's GitHub integration auto-deploys: every push to `master` ships to production, every PR gets its own preview URL. No CI config in the repo, no secrets to manage.
 
-### One-time setup
+### One-time setup (in the Vercel UI)
 
-1. **Create the Vercel project**
-   - `npm i -g vercel`
-   - `vercel link` in this repo, follow prompts (creates `.vercel/project.json` locally — gitignored).
-   - Then `cat .vercel/project.json` to read `orgId` and `projectId`.
+1. **Import the repo** — https://vercel.com/new → pick the GitHub repo. Vercel detects Next.js automatically; no overrides needed.
+2. **Build settings** — leave defaults (`npm run build`, output `.next`, install `npm install`).
+3. **Add the domain** — Project → Settings → Domains → add `chihaolu.me` and `www.chihaolu.me`. Vercel will show the DNS records you need.
+4. **Update DNS at your registrar**:
+   - `A` record `@` → `76.76.21.21`
+   - `CNAME` record `www` → `cname.vercel-dns.com`
+   - If the domain is currently pointed at Firebase Hosting, remove those A records first.
 
-2. **Create a Vercel access token**
-   - https://vercel.com/account/tokens → create a token scoped to the project.
-
-3. **Add three GitHub secrets** (Repo → Settings → Secrets and variables → Actions):
-   - `VERCEL_TOKEN` — the token from step 2
-   - `VERCEL_ORG_ID` — `orgId` from `.vercel/project.json`
-   - `VERCEL_PROJECT_ID` — `projectId` from `.vercel/project.json`
-
-4. **Wire `chihaolu.me` to Vercel**
-   - Vercel dashboard → Project → Settings → Domains → add `chihaolu.me` and `www.chihaolu.me`
-   - Update DNS at your registrar:
-     - `A` record `@` → `76.76.21.21`
-     - `CNAME` record `www` → `cname.vercel-dns.com`
-   - (If currently on Firebase Hosting, remove the old A records first.)
-
-After setup, `git push origin master` deploys to production automatically.
+That's it — every `git push origin master` from now on deploys to production.
 
 ## Theme & accessibility
 
