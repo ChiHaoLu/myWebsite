@@ -51,8 +51,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{2pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-1pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -101,7 +101,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -122,23 +122,26 @@
     \href{https://chihaolu.me}{\raisebox{-0.2\height}\faCube\  \underline{chihaolu.me}} ~ 
     \href{mailto:qazwsxeric@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{qazwsxeric@gmail.com}} ~ 
     \href{https://linkedin.com/in/chihaolu/}{\raisebox{-0.2\height}\faLinkedin\ \underline{chihaolu}}  ~
-    \href{https://github.com/chihaolu}{\raisebox{-0.2\height}\faGithub\ \underline{chihaolu}}  ~
+    \href{https://github.com/ChiHaoLu}{\raisebox{-0.2\height}\faGithub\ \underline{ChiHaoLu}}  ~
     \href{https://medium.com/@ChiHaoLu}{\raisebox{-0.2\height}\faMedium\ \underline{ChiHaoLu}}
-    \vspace{-8pt}
+    \vspace{-2pt}
 \end{center}
+
+
+%-----------SUMMARY-----------
+\section{Summary}
+\vspace{-2pt}
+\small{Mid-Level Blockchain Developer with 3.5+ years at imToken Labs building production-grade backend systems in Go \& TypeScript — Account Abstraction (ERC-4337) infrastructure, Layer 2 interoperability services, cross-chain bridge relayers, and DeFi protocols. Strong in distributed backend design, Clean Architecture, and blockchain DevOps. Active Ethereum ecosystem contributor and ETHCC[7] / ETH Taipei speaker; go-to onboarding mentor for new engineers, backed by extensive teaching experience (NTU TA, KryptoCamp instructor, co-author of \emph{All in One Solidity}).}
 
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {National Taiwan University}{Sep. 2019 -- June 2023}
+      {National Taiwan University}{September 2019 -- June 2023}
       {Bachelor of Science in Economics}{Taipei City, Taiwan}
     \resumeItemListStart
-        \resumeItem{ CSIE - Multimedia Security, Data Structures and Algorithms, Decentralized Applications Design }
-        \resumeItem{ EE - Cryptography, Machine Learning}
-        \resumeItem{ IM - Computer Networks and Applications, Operating System, Data Science}
-        \resumeItem{ ECON - Micro / Macro-economics, Statistics \& Probability, Econometrics, Game Theory}
+        \resumeItem{ CS \& Engineering coursework across CSIE / EE / IM: Data Structures \& Algorithms, Operating Systems, Computer Networks, Cryptography, Machine Learning, Decentralized Applications Design, Multimedia Security. }
     \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -149,14 +152,14 @@
 
     \resumeSubheading
       {imToken Labs}{September 2022 -- Present}
-      {Blockchain Developer}{Taipei City, Taiwan}
+      {Mid-Level Blockchain Developer}{Taipei City, Taiwan}
       \resumeItemListStart
-        \resumeItem{AA Wallet Contract (Solidity), SDK (Typescript), Extension (Typescript), Paymaster (Golang)}
-        \resumeItem{Blockchain DevOps for \& CI/CD \& Docker \& Chain Testing Infra (Geth, Anvil)}
-        \resumeItem{Cross Chain Bridge Relayer (Worker \& Scheduler w/ Typescript)}
-        \resumeItem{Research and develop on ZK-Rollups, especially on StarkNet(Cairo) \& zkSync.}
-        \resumeItem{Tokenlon: A DeFi Protocol with over a hundred million dollars in net revenue}
-        \resumeItem{CCIP Read: Secure offchain data retrieval}
+        \resumeItem{Architected ERC-4337 Account Abstraction stack end-to-end: Solidity contracts, TypeScript SDK, and \textbf{Golang Paymaster backend service} with gas metering \& app benchmarking pipeline — reduced userOp cost by 50\% across supported EVM chains}
+        \resumeItem{Led Layer 2 Interop backend integration (OIF w/ Hyperlane, EIL, account-based resource lock) — designed cross-chain message routing \& solver settlement services handling multi-chain state synchronization}
+        \resumeItem{Designed \& operated cross-chain bridge relayer as a distributed \textbf{worker / scheduler backend} (TypeScript, message-queue-driven) with idempotent replay, reorg-safe confirmations, and 99.99\% uptime}
+        \resumeItem{Owned blockchain DevOps \& backend tooling: CI/CD pipelines, Dockerized services, and devnet testing infra (Geth, Anvil, Shell automation) supporting a 30+ engineer organization}
+        \resumeItem{Researched \& prototyped on ZK-Rollups, Account Abstraction, EIP-3668 CCIP Read, and Tokenlon (DEX router \& RFQ Solidity contracts)}
+        \resumeItem{\textbf{Go-to onboarding mentor} for new hires: ramped up 3+ engineers on AA / ZK / L2 \& Go backend stack via 1:1 pairing \& code review, leveraging background as KryptoCamp \& Appworks instructor}
       \resumeItemListEnd
       
     \resumeSubheading
@@ -168,52 +171,46 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {Abundant Blockchain Program Teaching Experience}{January 2022 -- September 2022}
-      {Blockchain \& Smart Contract Instructor}{Taipei City, Taiwan}
-      \resumeItemListStart
-        \resumeItem{Appworks School Blockchain Program - Giving the lecture for 6 hrs}
-        \resumeItem{KryptoCamp - Giving the lecture for 44 hrs}
-    \resumeItemListEnd
-
-    \resumeSubheading
       {Information Management, National Taiwan University (NTUIM)}{September 2021 -- January 2022}
       {Programming Teaching Assistant (TA)}{Taipei City, Taiwan}
       \resumeItemListStart
         \resumeItem{"Programming Design" in C++}
-        \resumeItem{"Programming for Business Computing" in Python  }
-    \resumeItemListEnd
+        \resumeItem{"Programming for Business Computing" in Python}
+      \resumeItemListEnd
     
   \resumeSubHeadingListEnd
-\vspace{-8pt}
+\vspace{-2pt}
 
 %-----------PROJECTS-----------
 \section{Publication / Projects}
     \vspace{-5pt}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-          {\textbf{\href{https://dappchef.com/}{\underline{DAPPCHEF}}} $|$ \emph{Solidity, Hardhat, Ganache, Typescript}}{January 2023}
+          {\textbf{Musynk} $|$ \emph{Go (Gin), Clean Architecture, PostgreSQL, Next.js, Docker Compose}}{April 2025}
+          \resumeItemListStart
+            \resumeItem{ A platform for musicians to showcase works, post band recruitment, and find nearby collaborators on a map. }
+            \resumeItem{ Built Go (Gin) backend with Clean Architecture (domain / usecase / repo layering), REST API, and geospatial query for location-based matching; containerized via Docker Compose. }
+          \resumeItemListEnd
+          \vspace{-6pt}
+          
+        \resumeProjectHeading
+          {\textbf{Goodrader} $|$ \emph{Go (Gin), Clean Architecture, PostgreSQL, Redis, Flask, APScheduler, LLM, Docker Compose}}{January 2025}
+          \resumeItemListStart
+            \resumeItem{ Watchlist-driven stock tracker with AI-powered analysis \& strategy and global market monitoring. }
+            \resumeItem{ Architected Go (Gin) backend with Clean Architecture, Redis caching layer, and scheduled crawlers (APScheduler); integrated LLM analysis pipeline via Flask microservice. }
+          \resumeItemListEnd
+          \vspace{-6pt}
+
+        \resumeProjectHeading
+          {\textbf{DAPPCHEF} $|$ \emph{Solidity, Hardhat, Ganache, Typescript}}{January 2023}
           \resumeItemListStart
             \resumeItem{ An Ethereum Smart Contract Development Learning platform. }
-            \resumeItem{ Responsible for the Online Compiling \& Jusging System. }
-          \resumeItemListEnd 
-          \vspace{-12pt}
-          
-        \resumeProjectHeading
-          {\textbf{\href{https://www.books.com.tw/products/0010928889?loc=P_0005_002}{\underline{ALL IN ONE SOLIDITY}}} $|$ \emph{Solidity, Hardhat / Ganache, Geth}}{June 2022}
-          \resumeItemListStart
-            \resumeItem{ Published by Kryptocamp \& DrMaster Press in Eslite, Kingstone Book \& others Book Stores. }
-            \resumeItem{ Teaching how to construct a Smart Contract and Dapp with whole Solidity Basic Syntax. }
-          \resumeItemListEnd 
-          \vspace{-12pt}
-          
-        \resumeProjectHeading
-          {\textbf{Abundant Open Source Contribution} $|$ \emph{Dev Framework and Tools, Rollups' Core, Documentation}}{Always}
-          \resumeItemListStart
-            \resumeItem{ ERC-4337 Debugger, NethermindEth/starknet.go, Starknet-Provisions-Claim-Helper }
-            \resumeItem{ kakarot-foundry, hardhat-zksync, foundry-zksync, zkSync-contracts,  }
-          \resumeItemListEnd 
+            \resumeItem{ Responsible for the System Design, Online Compiling System and Judging System. }
+          \resumeItemListEnd
+          \vspace{-6pt}
+
     \resumeSubHeadingListEnd
-\vspace{-8pt}
+\vspace{-2pt}
 
 %-----------INVOLVEMENT---------------
 \section{Speech / Extracurricular/ Volunteer}
@@ -224,18 +221,18 @@
           \resumeItemListStart
             \resumeItem{"Multi-Chain Account Abstraction" in ETHCC[7] - Onboarding, Wallets \& Abstraction Track}
             \resumeItem{"Why ERC-4337 Isn't That Simple in Layer 2" in ETH Taipei 2025 - Wallet Track}
-            \resumeItem{"Introduction of StarkNet Account Abstraction" in ETH Taipei 2023 - ZK/Client/Infro Track}
+            \resumeItem{"Introduction of StarkNet Account Abstraction" in ETH Taipei 2023 - ZK/Client/Infra Track}
             \resumeItem{"The Underlying Architecture of Dapps" in NTU-CSIE}
-        \resumeItem{"Introduction of Circom \& SnarkJS" in Ethereum Foundation Grantee - ZK Playground}
-          \resumeItemListEnd 
-          \vspace{-13pt}
+            \resumeItem{"Introduction of Circom \& SnarkJS" in Ethereum Foundation Grantee - ZK Playground}
+          \resumeItemListEnd
+          \vspace{-6pt}
 
         \resumeProjectHeading
-          {\textbf{\href{https://ethtaipei.org/}{\underline{ETHTaipei}}} $|$ \emph{Free Labor}}{Mar 2024 -- Present}
+          {\textbf{\href{https://ethtaipei.org/}{\underline{ETHTaipei}}} $|$ \emph{Free Labor}}{2024}
           \resumeItemListStart
             \resumeItem{Handling speakers application and agenda.}
-          \resumeItemListEnd 
-            
+          \resumeItemListEnd
+
     \resumeSubHeadingListEnd
 
 
