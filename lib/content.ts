@@ -49,7 +49,7 @@ export const SITE = {
   bio:
     "🍩 Here is a Blockchain Developer from Taiwan. I am researching Layer 2, ZKP, and Account Systems to construct advanced patterns of decentralized applications — and, when the work calls for it, the underlying architecture of blockchain itself.",
   note: "Please feel free to PM for resume or any consultancy.",
-  lastUpdated: "2026-04-22",
+  lastUpdated: "2026-09-17",
   socials: [
     { label: "GitHub", handle: "github.com/ChiHaoLu", href: "https://github.com/ChiHaoLu" },
     { label: "LinkedIn", handle: "in/ChiHaoLu", href: "https://www.linkedin.com/in/ChiHaoLu/" },
