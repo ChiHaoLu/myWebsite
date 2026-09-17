@@ -42,7 +42,7 @@ export type Publishment = {
 
 export const SITE = {
   name: "Chi-Hao Lu",
-  aliases: ["0xMur**", "Alfred", "ALu", "Eric", "うさみ"],
+  aliases: ["0xMur**", "Alfred", "ALu", "Murmurlu", "うさみ"],
   role: "Blockchain Developer",
   location: "Taipei, Taiwan",
   email: "qazwsxeric@gmail.com",
@@ -68,14 +68,13 @@ export const SITE = {
       summary:
         "Developing & researching cutting-edge blockchain technology and state-of-the-art products.",
       bullets: [
+        "Blockchain DevOps for CI/CD, Docker and devnet testing infra (Geth, Anvil, Shell, Grafana)",
         "AA Wallet Contract (Solidity), SDK (Typescript), Extension (Typescript), Paymaster (Golang), gas metering & app benchmarking",
-        "Blockchain DevOps for CI/CD, Docker and devnet testing infra (Geth, Anvil, Shell)",
-        "Layer 2 Interop integration: OIF w/ Hyperlane, EIL, account-based resource lock",
-        "Claimable Link: transfer assets privately to anyone in one click",
+        "Layer 2 Interop: OIF w/ Hyperlane, EIL, account-based resource lock (worker & scheduler in Typescript, Solidity)",
         "Cross-chain bridge relayer (worker & scheduler in Typescript)",
+        "Claimable Link: transfer assets privately to anyone in one click",
         "Research on ZK-Rollups and Account Abstraction",
         "Tokenlon: trusted decentralized exchange protocol (Solidity)",
-        "EIP-3668 CCIP Read: secure off-chain data retrieval",
       ],
     },
     {
@@ -198,6 +197,13 @@ export const SITE = {
   ] satisfies Article[],
 
   talks: [
+    {
+      title: "Assets First, Proofs Later:  Building Verifiable Cross-Chain Intents with OIF",
+      venue: "ETHTaipei 2026 — “DeFi”",
+      date: "2026.09",
+      kind: "Speech",
+      href: "https://www.youtube.com/@ETHTaipei/videos",
+    },
     {
       title: "Why ERC-4337 Isn't That Simple in Layer 2",
       venue: "ETHTaipei 2025 — “Wallet”",
